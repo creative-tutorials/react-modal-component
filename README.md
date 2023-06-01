@@ -76,13 +76,13 @@ function Dashboard() {
   };
   return (
     <>
-      </LazyLoadComponent>
+      <LazyLoadComponent>
       <ReactModalComponent
         isModal={modalState.isModal}
         performTwoFunctions={performTwoFunctions}
         hideModal={hideModal}
       />
-    </>
+    </LazyLoadComponent>
   );
 }
 export default Dashboard;
