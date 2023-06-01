@@ -87,3 +87,5 @@ function Dashboard() {
 }
 export default Dashboard;
 ```
+
+**Note**: Your codebase can be different from mine, the main thing is you importing the component, the style, and add and also call the functions
