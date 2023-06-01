@@ -1,31 +1,17 @@
-// Create a state
+// Import the ReactModalComponent
+// Add a state from where you are importing the component from
+// Must be using React Latest Version
+// Should be using Typescript
 import { MouseEventHandler } from "react";
 import modalcss from "./styles/modal.module.css";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
-import React from "react";
 import { useState } from "react";
+import React from "react";
 export default function ReactModalComponent(props: {
   isModal: any;
   hideModal: MouseEventHandler<HTMLButtonElement> | undefined;
   performTwoFunctions: MouseEventHandler<HTMLButtonElement> | undefined;
 }) {
-  const [modalState, setModalState] = useState({ isModal: false, message: "" });
-  const showModal = () => {
-    setModalState((prevState) => {
-      return {
-        ...prevState,
-        isModal: true,
-      };
-    });
-  };
-  const hideModal = () => {
-    setModalState((prevState) => {
-      return {
-        ...prevState,
-        isModal: false,
-      };
-    });
-  };
   return (
     <LazyLoadComponent>
       <div
@@ -38,10 +24,10 @@ export default function ReactModalComponent(props: {
           irreversibly clear your data.
         </span>
         <div className={modalcss.tooltip_buttons}>
-          <button id={modalcss.cancel} onClick={hideModal}>
+          <button id={modalcss.cancel} onClick={props.hideModal}>
             Cancel
           </button>
-          <button id={modalcss.reset} onClick={() => console.log("hello")}>
+          <button id={modalcss.reset} onClick={props.performTwoFunctions}>
             Reset
           </button>
         </div>
