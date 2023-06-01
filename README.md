@@ -6,16 +6,18 @@ Steps To begin using RMC
 
 ![image](https://github.com/creative-tutorials/react-modal-component/assets/68476321/4b02eafb-7ee3-4796-b7ff-17ec3c6e64f8)
 
+- ### Step2: Copy the files you extracted into your _codebase_
 
-- ### Step2: Make sure you've `react-lazy-load-image-component` installed
 
-- ### Step3: Create a state for the modal, This state will be placed where you're importing the component from
+- ### Step3: Make sure you've `react-lazy-load-image-component` installed
+
+- ### Step4: Create a state for the modal, This state will be placed where you're importing the component from
 
 ```tsx
 const [modalState, setModalState] = useState({ isModal: false, message: "" });
 ```
 
-- ### Step4: Create a function for the show/hide of the modal
+- ### Step5: Create a function for the show/hide of the modal
 
 ```tsx
 const showModal = () => {
