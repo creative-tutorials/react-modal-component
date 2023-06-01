@@ -2,16 +2,19 @@
 
 Steps To begin using RMC
 
-- ### Step1: Extract the `modal.tsx` and `modal.module.css` from their folders
+- ## Step1: Extract the `modal.tsx` and `modal.module.css` from their folders
 
 ![image](https://github.com/creative-tutorials/react-modal-component/assets/68476321/4b02eafb-7ee3-4796-b7ff-17ec3c6e64f8)
 
 - ### Step2: Copy the files you extracted into your _codebase_
 
+> **Note**: These files are located in the `node_modules` folder
 
 - ### Step3: Make sure you've `react-lazy-load-image-component` installed
 
-- ### Step4: Create a state for the modal, This state will be placed where you're importing the component from
+- ### Step4: Create a state for the modal, This state will be placed where you're importing this component from
+
+> Exmaple: The state can be in your `App.tsx` folder for React and `index.tsx` folder for NextJS
 
 ```tsx
 const [modalState, setModalState] = useState({ isModal: false, message: "" });
@@ -40,6 +43,8 @@ const showModal = () => {
   
 - ### Step 4: Import the style
 
+In step4 you need to import the style so your modal will looks great.
+
 ```tsx
 import modalcss from "./styles/modal.module.css";
 ```
@@ -55,7 +60,7 @@ import { useState, useEffect, MouseEventHandler, lazy } from "react";
 const ReactModalComponent = lazy(() => import('../../components/function/modal/ReactModalComponent'));
 
 
-function Dashboard() {
+function App() {
   const [modalState, setModalState] = useState({ isModal: false, message: "" });
 
   const showModal = () => {
@@ -85,7 +90,7 @@ function Dashboard() {
     </LazyLoadComponent>
   );
 }
-export default Dashboard;
+export default App;
 ```
 
-**Note**: Your codebase can be different from mine, the main thing is you importing the component, the style, and add and also call the functions
+> _Your codebase can be different from mine, the main thing is you importing the component, the style, and add and also call the functions_
