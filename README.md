@@ -22,6 +22,7 @@ const [modalState, setModalState] = useState({ isModal: false, message: "" });
 - Step5: Go to the function folder located at `node_modules/devtreasure-react-modal-component/function`. Then copy the show and hide function into your codebase where you imported the modal from
   
 - Step 4: Importing the style
+  
 No need to worry about this one, it's already done. Just make sure you change the path. for example yours could look something like this
 `/styles/modal.module.css` or `/styles/animation/modal.module.css`
 
