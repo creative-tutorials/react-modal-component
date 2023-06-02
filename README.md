@@ -1,33 +1,31 @@
 # react-modal-component
 
-Steps To begin using this package
+To begin using this package, follow these steps:
 
-- Step1: Go to the `node_modules` folder, look for the folder named `devtreasure-react-modal-component` copy the modal.tsx from the `src folder` and for the style copy the `modal.module.css` from the styles folder.
+- Step1: Go to the `node_modules` folder in your project and locate the folder named `devtreasure-react-modal-component`. Inside that folder, copy the `modal.tsx` file from the src folder. For the styles, copy the `modal.module.css` file from the styles folder.
 
-- Step2: Paste those into your codebase directly into your `componets folder`
+- Step2: Paste the `modal.tsx` file directly into your project's components folder.
+- Step3: Paste the `modal.module.css` file into the styles folder of your project.
 
 ![image](https://github.com/creative-tutorials/react-modal-component/assets/68476321/e8a9081f-d219-498c-8cc6-ae0697de6d78)
 
-- Step3: Make sure you've `react-lazy-load-image-component` installed
+- Step4: Make sure you have the `react-lazy-load-image-component` package installed in your project.
 
-- Step4: In the src folder, you'll see a `state.tsx` file. Copy the state properties used, into your codebase
+- Step5: In the package's src folder, locate the `state.tsx` file. Copy the state properties used and paste them into your own codebase.
 
-> **Note**: Do not copy the function wrapper. Just copy the state properties alone
-
-> **Example:** Should look something like this 👇
+> **Note**: Only copy the state properties, not the entire function wrapper. The code should look something like this
 
 ```tsx
 const [modalState, setModalState] = useState({ isModal: false, message: "" });
 ```
 
-- Step5: Go to the function folder located at `node_modules/devtreasure-react-modal-component/function`. Then copy the show and hide function into your codebase where you imported the modal from
+- Step6: Go to the function folder located at `node_modules/devtreasure-react-modal-component`. Copy the show and hide functions from that folder and paste them into your codebase where you imported the modal from.
   
-- Step 4: Importing the style
+- Step 7: Importing the style
   
-No need to worry about this one, it's already done. Just make sure you change the path. for example yours could look something like this
-`/styles/modal.module.css` or `/styles/animation/modal.module.css`
+No need to worry about this step as it's already done for you. Just make sure you change the path to match your project's file structure. For example, your style import could look something like this: `/styles/modal.module.css` or `/styles/animation/modal.module.css`.
 
-Full Code Should looks something like this
+Your full code should look something like this:
 
 ```tsx
 import {
@@ -60,15 +58,16 @@ function App() {
   return (
     <>
       <LazyLoadComponent>
-      <ReactModalComponent
-        isModal={modalState.isModal}
-        performTwoFunctions={performTwoFunctions}
-        hideModal={hideModal}
-      />
-    </LazyLoadComponent>
+        <ReactModalComponent
+          isModal={modalState.isModal}
+          performTwoFunctions={performTwoFunctions}
+          hideModal={hideModal}
+        />
+      </LazyLoadComponent>
+    </>
   );
 }
 export default App;
 ```
 
-> _Your codebase can be different from mine, the main thing is you importing the component, the style, and add and also call the functions_
+> **Note**: Please note that your codebase may be different from the example provided. The key is to import the component, the style, and call the necessary functions accordingly.
