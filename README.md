@@ -80,8 +80,18 @@ To display your modal, please copy the code snippet below. Note that it doesn't 
 </button>
 ```
 
+## How to update Package
+
+If you want to update the package simpley update using the following
+
+| npm                              | yarn                               | pnpm                          |
+| -------------------------------- | ---------------------------------- | ----------------------------- |
+| npm update react-modal-component | yarn upgrade react-modal-component | pnpm up react-modal-component |
+
+> **Note**: In case there are significant changes to the code, please make sure to copy the updated code into your codebase again.
+
 > **Note**: You might see a function called `performTwoFunctions`. Please delete that. This was meant to pefrom two operations. When I was working on this.
 >
-..........................................................................................
+> ..........................................................................................
 
 > **Note**: Please note that your codebase may be different from the example provided. The key is to import the component, the style, and call the necessary functions accordingly.
