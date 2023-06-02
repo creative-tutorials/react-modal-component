@@ -20,9 +20,8 @@ const [modalState, setModalState] = useState({ isModal: false, message: "" });
 ```
 
 - Step6: Go to the function folder located at `node_modules/devtreasure-react-modal-component`. Copy the show and hide functions from that folder and paste them into your codebase where you imported the modal from.
-  
 - Step 7: Importing the style
-  
+
 No need to worry about this step as it's already done for you. Just make sure you change the path to match your project's file structure. For example, your style import could look something like this: `/styles/modal.module.css` or `/styles/animation/modal.module.css`.
 
 Your full code should look something like this:
@@ -33,8 +32,9 @@ import {
   LazyLoadComponent,
 } from "react-lazy-load-image-component";
 import { useState, useEffect, MouseEventHandler, lazy } from "react";
-const ReactModalComponent = lazy(() => import('../../components/function/modal/ReactModalComponent'));
-
+const ReactModalComponent = lazy(
+  () => import("../../components/function/modal/ReactModalComponent")
+);
 
 function App() {
   const [modalState, setModalState] = useState({ isModal: false, message: "" });
@@ -69,5 +69,19 @@ function App() {
 }
 export default App;
 ```
+
+## How to show the modal
+
+To display your modal, please copy the code snippet below. Note that it doesn't have to be a button; you can use any HTML tags in your codebase.
+
+```tsx
+<button id={"hello-world"} onClick={showModal}>
+  Show Modal
+</button>
+```
+
+> **Note**: You might see a function called `performTwoFunctions`. Please delete that. This was meant to pefrom two operations. When I was working on this.
+>
+..........................................................................................
 
 > **Note**: Please note that your codebase may be different from the example provided. The key is to import the component, the style, and call the necessary functions accordingly.
