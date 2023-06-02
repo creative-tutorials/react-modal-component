@@ -13,6 +13,7 @@ Steps To begin using this package
 - Step4: In the src folder, you'll see a `state.tsx` file. Copy the state properties used, into your codebase
 
 > **Note**: Do not copy the function wrapper. Just copy the state properties alone
+
 > **Example:** Should look something like this 👇
 
 ```tsx
