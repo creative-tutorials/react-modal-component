@@ -26,10 +26,6 @@ const [modalState, setModalState] = useState({ isModal: false, message: "" });
 No need to worry about this one, it's already done. Just make sure you change the path. for example yours could look something like this
 `/styles/modal.module.css` or `/styles/animation/modal.module.css`
 
-```tsx
-import modalcss from "./styles/modal.module.css";
-```
-
 Full Code Should looks something like this
 
 ```tsx
