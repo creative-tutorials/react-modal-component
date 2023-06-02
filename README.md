@@ -6,7 +6,7 @@ Steps To begin using this package
 
 - Step2: Paste those into your codebase directly into your `componets folder`
 
-![image](https://github.com/creative-tutorials/react-modal-component/assets/68476321/4b02eafb-7ee3-4796-b7ff-17ec3c6e64f8)
+![image](https://github.com/creative-tutorials/react-modal-component/assets/68476321/e8a9081f-d219-498c-8cc6-ae0697de6d78)
 
 - Step3: Make sure you've `react-lazy-load-image-component` installed
 
